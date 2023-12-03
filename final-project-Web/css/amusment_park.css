@@ -76,6 +76,8 @@ nav {
     height: 50px;
     opacity: 0.9;
     box-shadow: 2px 2px 2px grey;
+/*    position:relative;
+*/   
 }
 
     nav ul {
@@ -134,8 +136,11 @@ nav {
     width: 100%;
     background-position: center;
     background-size: cover;
-     max-width: 100%;
-    /*clip-path: ellipse(100% 100% at 50% 0%);*/
+    max-width: 100%;
+/*    border-end-start-radius:100px;
+    border-end-end-radius:100px;*/ 
+/*    clip-path: ellipse(100% 100% at 50% 0%);
+*/
 }
     .bg-img:hover {
         opacity: 0.7;
@@ -158,6 +163,15 @@ nav {
     }
 
 /* Форматиране на снимки */
+.kind-atractions img{
+    border-radius: 15px;
+}
+
+.slider-container li img{
+    width:60%;
+    height:450px;
+    margin-left:310px;
+}
 .history-img img {
     height: 400px;
     width: 40%;
@@ -176,7 +190,7 @@ nav {
     float: right;
     margin: 20px 60px;
     background-color: #f2d6fe;
-    height: 400px;
+    height: 420px;
     width: 40%;
     padding: 15px;
     border: 3px solid;
@@ -212,6 +226,7 @@ input[type=submit] {
     height: 40px;
     float: left;
     border-color: #9262a7;
+    border-radius:10px;
 }
 
 input[type=reset] {
@@ -223,6 +238,10 @@ input[type=reset] {
     height: 40px;
     float: right;
     border-color: #9262a7;
+    border-radius: 10px;
+}
+fieldset{
+    width:50%;
 }
 /* Форматиране на полето за контакти */
 .contact {
@@ -294,14 +313,19 @@ input[type=reset] {
 
 #article3:hover {
     transform: scale(1.1);
-}
+/*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/}
 
 #article1:hover {
     transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
 }
 
 #article2:hover {
     transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
 }
 
 
@@ -492,7 +516,7 @@ video {
     height: 400px;
     width: 60%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .5s ;
     background-color: #f2d6fe;
 }
 
@@ -508,7 +532,9 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+/*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y)*/ 
     font-family: 'Comic Sans MS';
+
 }
 
 .container_two {
@@ -529,7 +555,7 @@ video {
     height: 500px;
     width: 60%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .5s ;
     background-color: #f2d6fe;
 }
 

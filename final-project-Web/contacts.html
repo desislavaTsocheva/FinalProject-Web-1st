@@ -43,25 +43,30 @@
 
         <div class="registration">
             <h1>Форма за запитване</h1>
-            <form method="post">
+            <form action="https://www.google.bg/" method="get" target="_blank">
                 <label for="name">Име</label>
                 <input type="text" id="name" name="firstname" placeholder="Вашето име.."><br>
                 <label for="last_name">Фамилия</label>
                 <input type="text" id="last_name" name="lastname" placeholder="Вашата фамилия.."><br>
                 <label for="age">Години</label>
                 <input type="number" id="age" name="age" max="100" min="1"><br>
-                <label for="gender">Пол</label><br>
-                <input type="radio" id="male" value="Мъж" name="gender" >
-                <label for="male">Мъж</label><br>
-                <input type="radio" id="female" value="Жена" name="gender">
-                <label for="female">Жена</label><br>
-                <label for="question">Откъде научихте за сайта?</label><br>
-                <input type="checkbox" id="social-media" name="question" value="SocialMedia">
-                <label for="social-media">Social Media</label><br>
-                <input type="checkbox" id="fr" name="question" value="Friends">
-                <label for="fr">Friends</label><br>
-                <input type="checkbox" id="google" name="question" value="Google">
-                <label for="google">Google</label><br>
+                <fieldset>
+                    <legend>Пол</legend>
+                    <!--<label for="gender">Пол</label><br>-->
+                    <input type="radio" id="male" value="Мъж" name="gender">
+                    <label for="male">Мъж</label><br>
+                    <input type="radio" id="female" value="Жена" name="gender">
+                    <label for="female">Жена</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Откъде научихте за сайта?</legend>
+                        <input type="checkbox" id="social-media" name="question" value="SocialMedia">
+                        <label for="social-media">Social Media</label><br>
+                        <input type="checkbox" id="fr" name="question" value="Friends">
+                        <label for="fr">Friends</label><br>
+                        <input type="checkbox" id="google" name="question" value="Google">
+                        <label for="google">Google</label><br>
+                </fieldset>
                 <input type="submit" value="Потвърди">
                 <input type="reset" value="Рестартиране">
             </form>
